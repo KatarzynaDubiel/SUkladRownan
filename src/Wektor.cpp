@@ -1,26 +1,26 @@
-#include "Wektor.hh"
+//#include "Wektor.hh"
 
-double Wektor::operator[](int i) const{
+/*double Wektor::operator[](int i) const{
     return Skladowa[i];
 }//zwraca skladnik wektora, czyli tablicy
 
 double &Wektor::operator[](int i){
     return Skladowa[i];
-}
-
+}*/
+/*
 std::istream& operator >> (std::istream &Strm, Wektor &Wek){
     for(int i=0; i<ROZMIAR; i++){
         Strm>>Wek[i];//wczytywanie wektora
     }
         return Strm;//zwraca co wczytane
-}
-
+}*/
+/*
 std::ostream& operator << (std::ostream &Strm, const Wektor &Wek){
 for(int i=0; i<ROZMIAR; i++)
 Strm<<Wek[i]<<"\t";//robi tabulator
 return Strm;
-}
-
+}*/
+/*
 Wektor Wektor::operator + (Wektor Wektor2){//definicja, podobnie jak w LZespolonych, tutaj dodajemy wektory
     Wektor Wynik;
     for (int i=0; i<ROZMIAR; i++)
@@ -69,4 +69,4 @@ Wektor Wektor::operator & (Wektor Wektor2){//tutaj iloczyn wektorowy
     Wynik[2]=Skladowa[0]*Wektor2[1]-Wektor2[0]*Skladowa[1];
 
     return Wynik;
-}
+}*/
