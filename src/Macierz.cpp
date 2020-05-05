@@ -1,4 +1,4 @@
-#include "Macierz.hh"
+/* #include "Macierz.hh"
 #include "Wektor.hh"
 
 Wektor Macierz::operator[](int i) const{
@@ -12,7 +12,7 @@ std::istream& operator >> (std::istream &Strm, Macierz &Mac){
     for(int i=0; i<ROZMIAR; i++)
     Strm>>Mac[i];
 
-    return Strm;
+    return Strmz;
 }
 
 std::ostream& operator << (std::ostream &Strm, const Macierz &Mac){
@@ -51,4 +51,4 @@ Macierz Macierz::Kwadrat(){//kazdy element macierzy podnosi sie do kwadratu
          }
          Wyznacznik=Wyznacznik*kopia[i][i];
      }
- }
+ }*/

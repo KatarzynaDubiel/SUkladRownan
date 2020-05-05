@@ -1,5 +1,5 @@
+/* 
 #include "UkladRownanLiniowych.hh"
-
 
 std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych &UklRown){
     Strm>>UklRown.set_Ma_Wspolcznikow()>>UklRown.set_Wek_Wyrazow_Wolnych();
@@ -14,6 +14,9 @@ std::ostream& operator << (std::ostream &Strm, const UkladRownanLiniowych &UklRo
     return Strm;
 }
 
+*/
+//--------------------------------------------------------
+/*
 Ilosc_rozwiazan UkladRownanLiniowych::oblicz_wynik(){
     Macierz Kopie[ROZMIAR];
     Ma_Wspolcznikow.Wyznacznik_Gauss();
@@ -33,9 +36,9 @@ Ilosc_rozwiazan UkladRownanLiniowych::oblicz_wynik(){
         Wek_wynikow[i]=Kopie[i].get_Wyznacznik()/Ma_Wspolcznikow.get_Wyznacznik();
     }
     return JEDNO_ROZWIAZANIE;
-}
-
+}*/
+/*
 void UkladRownanLiniowych::Oblicz_Bledy(){
     Wek_Bledow=Ma_Wspolcznikow*Wek_wynikow-Wek_Wyrazow_Wolnych;
     Dl_Wek_Bledu=sqrt(Wek_Bledow*Wek_Bledow);
-}
+}*/
