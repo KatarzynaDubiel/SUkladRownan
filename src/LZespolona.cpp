@@ -55,8 +55,6 @@ LZespolona  LZespolona::operator / (LZespolona  Skl2){
   return *this*Skl2.Sprzezenie()/Skl2.modul2();
 }
 
-
-
 std::ostream & operator << (std::ostream& Strm, LZespolona Skl1){
     Strm << "("<<Skl1.get_re()<<std::showpos<<Skl1.get_im()<<std::noshowpos<<"i)";
     return Strm;

@@ -7,7 +7,7 @@
 
 template <typename STyp, int SWymiar>
 class SMacierz {
-    SWektor<STyp,SWymiar> Kolumna[SWymiar];/*sa 3 wiersze, czyli 3 SWektor<STyp,SWymiar>y*/
+    SWektor<STyp,SWymiar> Kolumna[SWymiar];
     STyp Wyznacznik;
 public:
     STyp get_Wyznacznik() const {return Wyznacznik;}
@@ -60,7 +60,7 @@ std::ostream& operator << (std::ostream &Strm, const SMacierz<STyp,SWymiar> &Mac
 template <typename STyp, int SWymiar>
 SMacierz<STyp,SWymiar> SMacierz<STyp,SWymiar>::Odejmowanie(SMacierz<STyp,SWymiar> Odjemna, SMacierz<STyp,SWymiar> Odjemnik){
     SMacierz<STyp,SWymiar> M4_wynik;
-    for(int i=0; i<10; i++){//chyba powinnam zmienic SWymiar, ale na razie niech tak bedzie
+    for(int i=0; i<10; i++){
         for(int j=0; j<10; j++){
         M4_wynik[i][j]=Odjemna.Kolumna[i][j]-Odjemnik.Kolumna[i][j];
         }
@@ -85,7 +85,7 @@ SMacierz<STyp,SWymiar> SMacierz<STyp,SWymiar>::Mnozenie(SMacierz<STyp,SWymiar> C
     return  M7_iloczyn;
 }
 template <typename STyp, int SWymiar>
-SMacierz<STyp,SWymiar> SMacierz<STyp,SWymiar>::Kwadrat(){//kazdy element SMacierz<STyp,SWymiar>y podnosi sie do kwadratu
+SMacierz<STyp,SWymiar> SMacierz<STyp,SWymiar>::Kwadrat(){//kazdy element Macierzy podnosi sie do kwadratu
     SMacierz<STyp,SWymiar> Macierz_Spotegowana;
     for(int i=0; i<SWymiar; i++){
         for(int j=0; j<SWymiar; j++){

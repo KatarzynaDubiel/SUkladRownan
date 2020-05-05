@@ -20,7 +20,6 @@ class  LZespolona {
   LZespolona  operator - ( LZespolona  Skl2);
   LZespolona  operator * ( LZespolona  Skl2);
   LZespolona  operator / ( LZespolona  Skl2);
-  //LZespolona  operator % ( LZespolona  Skl2);
   LZespolona operator / ( double  skalar);
 
   bool operator==( LZespolona arg2);

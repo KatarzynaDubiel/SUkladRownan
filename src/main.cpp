@@ -11,7 +11,7 @@ int main(int argc, char **argv){
 char  znak;
 cin>>znak;
   if(znak=='r'){
-    SUkladRownanLiniowych<double,5>   UklRown;
+    SUkladRownanLiniowych<double,6>   UklRown;
 
     cout << endl << " Start programu " <<  endl  <<  endl;
     cin>>UklRown;
@@ -20,7 +20,7 @@ cin>>znak;
     switch (UklRown.oblicz_wynik()){
 
     case JEDNO_ROZWIAZANIE:
-      cout<<"Rozwiazanie x = (x1, x2, x3, x4, x5):"<<endl<<endl;
+      cout<<"Rozwiazanie x = (x1, x2, x3, x4, x5, x6):"<<endl<<endl;
       cout<<UklRown.get_Wek_wynikow()<<endl<<endl;
       cout<<"Wektor bledu Ax-b:"<<endl<<endl;
       cout<<UklRown.get_Wek_Bledow()<<endl<<endl;
@@ -36,7 +36,7 @@ cin>>znak;
     }
   }
   else if(znak=='z'){
-  SUkladRownanLiniowych<LZespolona,5>   UklRown;
+  SUkladRownanLiniowych<LZespolona,6>   UklRown;
 
   cout << endl << " Start programu " <<  endl  <<  endl;
   cin>>UklRown;
@@ -45,7 +45,7 @@ cin>>znak;
   switch (UklRown.oblicz_wynik()){
 
     case JEDNO_ROZWIAZANIE:
-      cout<<"Rozwiazanie x = (x1, x2, x3, x4, x5):"<<endl<<endl;
+      cout<<"Rozwiazanie x = (x1, x2, x3, x4, x5, x6):"<<endl<<endl;
       cout<<UklRown.get_Wek_wynikow()<<endl<<endl;
       cout<<"Wektor bledu Ax-b:"<<endl<<endl;
       cout<<UklRown.get_Wek_Bledow()<<endl<<endl;
